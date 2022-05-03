@@ -28,12 +28,39 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            var Penguin = new Bird();
+            Penguin.Flight = false;
+            Penguin.Motion = "walk";
+            Penguin.Noise = "ah ah ah";
+
+            Console.WriteLine("Here we see a beautiful penguin.");
+            Console.WriteLine(Penguin.BeakLength);
+            Console.WriteLine(Penguin.Motion);
+            Console.WriteLine(Penguin.Flight);
+            Console.WriteLine(Penguin.Skin);
+            Console.WriteLine(Penguin.Legs);
+            Console.WriteLine(Penguin.Toes);
+            Console.WriteLine(Penguin.Noise);
+            Console.WriteLine(Penguin.Diet);
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            var BlackMamba = new Reptile() { Legs=0, Motion="slither", Diet="rodents"};
+
+            Console.WriteLine("Here we see a deadly black mamba.");
+            Console.WriteLine(BlackMamba.Aggressive);
+            Console.WriteLine(BlackMamba.Motion);
+            Console.WriteLine(BlackMamba.Diet);
+            Console.WriteLine(BlackMamba.Skin);
+            Console.WriteLine(BlackMamba.Legs);
+            Console.WriteLine(BlackMamba.Venomous);
+            Console.WriteLine(BlackMamba.Endangered);
+            Console.WriteLine(BlackMamba.Origin);
         }
     }
 }
